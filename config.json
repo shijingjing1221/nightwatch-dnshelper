@@ -1,0 +1,11 @@
+{
+    "url": "https://jshi.usersys.redhat.com:4443/labs/dnshelper/",
+    "username": "rhn-support-jshi",
+    "password": "redhat",
+    "rhel7_1": "10.66.192.57",
+    "rhel7_2": "10.66.192.140",
+    "forwarder":"10.72.17.5",
+    "script_folder":"/home/jshi/Downloads",
+    "pause_time": 200,
+    "timeout": 20000
+}

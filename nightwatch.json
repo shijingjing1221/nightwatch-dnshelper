@@ -1,0 +1,52 @@
+{
+    "src_folders": ["tests"],
+    "output_folder": "reports",
+    "custom_commands_path": "custom-commands",
+    "custom_assertions_path": "",
+    "page_objects_path": "custom-commands",
+    "globals_path": "globalsModule.js",
+
+    "selenium": {
+        "start_process": false,
+        "server_path": "",
+        "log_path": "",
+        "host": "127.0.0.1",
+        "port": 4444,
+        "cli_args": {
+            "webdriver.firefox.profile": "nightwatch",
+            "webdriver.chrome.driver": "bin/chromedriver",
+            "webdriver.ie.driver": ""
+        }
+    },
+
+    "test_settings": {
+        "default": {
+            "launch_url": "http://localhost",
+            "selenium_port": 4444,
+            "selenium_host": "localhost",
+            "silent": true,
+            "screenshots": {
+                "enabled": false,
+                "path": ""
+            },
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true,
+                "chromeOptions": {
+                    "args": ["test-name", "keep-alive-for-test", "unlimited-storage",
+                        "no-default-browser-check", "allow-file-access",
+                        "disable-client-side-phishing-detection",
+                        "safebrowsing-disable-download-protection",
+"unsafely-treat-insecure-origin-as-secure=https://jshi.usersys.redhat.com","nacl-dangerous-no-sandbox-nonsfi","enable-unsafe-es3-apis"
+                    ],
+                    "excludeSwitches": ["disable-web-resources"]
+                },
+                "platform": "Linux"
+            },
+            "cli_args": {
+                "webdriver.firefox.profile": "nightwatch"
+            }
+        }
+    }
+}
